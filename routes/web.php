@@ -1,5 +1,6 @@
 <?php
 
+use App\Jobs\SendUsers;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +12,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+
+//     $job = new SendUsers([]);
+//     $this->dispatch($job);
+//     $jobStatusId = $job->getJobStatusId();
+//     // SendUsers::dispatch()->delay(2);
+//     return view('welcome');
+// });
+
+Route::get('/', 'testCon@index');
